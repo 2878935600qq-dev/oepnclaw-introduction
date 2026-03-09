@@ -1,0 +1,11 @@
+{
+  "name": "openclaw-site",
+  "version": "1.0.0",
+  "description": "OpenClaw 官方网站",
+  "scripts": {
+    "start": "node server.js",
+    "deploy:surge": "surge --project . --domain openclaw-site.surge.sh",
+    "deploy:netlify": "netlify deploy --prod --dir=."
+  },
+  "devDependencies": {}
+}

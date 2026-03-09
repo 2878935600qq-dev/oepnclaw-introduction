@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw 🦞 - 自托管 AI 网关</title>
+    <meta name="description" content="OpenClaw 是一个自托管的多渠道 AI 网关，连接 WhatsApp、Telegram、Discord、iMessage 到 AI 助手">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">🦞</span>
+                <span class="logo-text">OpenClaw</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#features" class="nav-link">功能</a></li>
+                <li><a href="#channels" class="nav-link">渠道</a></li>
+                <li><a href="#advantages" class="nav-link">优势</a></li>
+                <li><a href="https://github.com/openclaw/openclaw" class="nav-link" target="_blank">GitHub</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">✨</span>
+                <span>开源自托管 AI 网关</span>
+            </div>
+            <h1 class="hero-title">
+                你的个人 AI 助手
+                <span class="gradient-text">无处不在</span>
+            </h1>
+            <p class="hero-description">
+                OpenClaw 是一个自托管的多渠道网关，将 WhatsApp、Telegram、Discord、iMessage 
+                等聊天应用连接到你的 AI 编码助手。在你的硬件上运行，你的规则，你的数据。
+            </p>
+            <div class="hero-buttons">
+                <a href="https://github.com/openclaw/openclaw" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://docs.openclaw.ai" target="_blank" class="btn btn-secondary">
+                    <i class="fas fa-book"></i>
+                    文档
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">支持渠道</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">MIT</span>
+                    <span class="stat-label">开源协议</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5min</span>
+                    <span class="stat-label">快速部署</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <div class="chat-header">
+                        <span class="chat-avatar">🦞</span>
+                        <span class="chat-name">OpenClaw</span>
+                        <span class="chat-status">在线</span>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message received">
+                            <div class="message-bubble">帮我整理一下下载文件夹</div>
+                            <span class="message-time">10:30</span>
+                        </div>
+                        <div class="message sent">
+                            <div class="message-bubble">好的，我来帮你整理下载文件夹...</div>
+                            <span class="message-time">10:31</span>
+                        </div>
+                        <div class="message sent">
+                            <div class="message-bubble">✅ 已整理完成！<br>📁 图片: 15个文件<br>📄 文档: 8个文件<br>📦 压缩包: 3个文件</div>
+                            <span class="message-time">10:31</span>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <span class="input-placeholder">输入消息...</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能特性 -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">核心功能</span>
+                <h2 class="section-title">为什么选择 OpenClaw？</h2>
+                <p class="section-description">专为开发者和高级用户设计的 AI 网关，让你随时随地与 AI 助手对话</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="feature-title">自托管</h3>
+                    <p class="feature-desc">运行在你自己的硬件上，完全掌控你的数据和隐私。无需依赖第三方云服务。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="feature-title">多渠道</h3>
+                    <p class="feature-desc">一个网关同时服务 WhatsApp、Telegram、Discord、iMessage，统一入口管理所有对话。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="feature-title">Agent 原生</h3>
+                    <p class="feature-desc">专为编码助手设计，支持工具调用、会话管理、记忆功能和多 Agent 路由。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3 class="feature-title">开源</h3>
+                    <p class="feature-desc">MIT 协议开源，社区驱动。自由定制、扩展和贡献代码。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">移动节点</h3>
+                    <p class="feature-desc">支持 iOS 和 Android 节点配对，实现 Canvas、相机、屏幕录制、位置等丰富功能。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">安全可靠</h3>
+                    <p class="feature-desc">支持令牌认证、白名单、提及规则等安全控制，确保只有授权用户可以访问。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 支持渠道 -->
+    <section id="channels" class="channels">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">支持渠道</span>
+                <h2 class="section-title">连接你喜爱的聊天应用</h2>
+                <p class="section-description">一个网关，多渠道支持，统一管理所有对话</p>
+            </div>
+            <div class="channels-grid">
+                <div class="channel-card">
+                    <div class="channel-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>通过 WhatsApp Web 集成，支持个人聊天和群组</p>
+                    <span class="channel-badge">原生支持</span>
+                </div>
+                <div class="channel-card">
+                    <div class="channel-icon telegram">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3>Telegram</h3>
+                    <p>Bot API 支持，快速响应，支持媒体文件</p>
+                    <span class="channel-badge">原生支持</span>
+                </div>
+                <div class="channel-card">
+                    <div class="channel-icon discord">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>Discord</h3>
+                    <p>服务器 Bot 集成，支持频道和私信</p>
+                    <span class="channel-badge">原生支持</span>
+                </div>
+                <div class="channel-card">
+                    <div class="channel-icon imessage">
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <h3>iMessage</h3>
+                    <p>macOS 本地集成，原生 iMessage 体验</p>
+                    <span class="channel-badge">macOS 专用</span>
+                </div>
+                <div class="channel-card">
+                    <div class="channel-icon mattermost">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Mattermost</h3>
+                    <p>企业级聊天平台，插件扩展支持</p>
+                    <span class="channel-badge">插件</span>
+                </div>
+                <div class="channel-card coming-soon">
+                    <div class="channel-icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h3>更多渠道</h3>
+                    <p>持续添加新渠道支持</p>
+                    <span class="channel-badge">即将推出</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心优势 -->
+    <section id="advantages" class="advantages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">核心优势</span>
+                <h2 class="section-title">OpenClaw 的独特之处</h2>
+            </div>
+            <div class="advantages-content">
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="advantage-text">
+                        <h3>极速部署</h3>
+                        <p>5 分钟即可完成安装和配置。Node.js 22+ 环境，一个 npm 命令搞定。</p>
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="advantage-text">
+                        <h3>多 Agent 路由</h3>
+                        <p>隔离的会话管理，每个工作区或发送者拥有独立的 Agent 会话，互不干扰。</p>
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="advantage-text">
+                        <h3>富媒体支持</h3>
+                        <p>支持图片、音频、文档的发送和接收。可选语音转文字钩子。</p>
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="advantage-text">
+                        <h3>Web 控制面板</h3>
+                        <p>浏览器仪表板管理聊天、配置、会话和节点。支持本地和远程访问。</p>
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="advantage-text">
+                        <h3>工具流式传输</h3>
+                        <p>支持 Agent 工具调用的实时流式传输，长响应自动分块处理。</p>
+                    </div>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="advantage-text">
+                        <h3>群组聊天支持</h3>
+                        <p>基于提及的群组激活机制，支持 @openclaw 触发响应。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🦞 OpenClaw</span>
+                    <p>自托管多渠道 AI 网关<br>你的数据，你的规则</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>文档</h4>
+                        <ul>
+                            <li><a href="#">快速开始</a></li>
+                            <li><a href="#">配置指南</a></li>
+                            <li><a href="#">API 参考</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>社区</h4>
+                        <ul>
+                            <li><a href="https://github.com/openclaw/openclaw">GitHub</a></li>
+                            <li><a href="https://discord.com/invite/clawd">Discord</a></li>
+                            <li><a href="#">贡献指南</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>资源</h4>
+                        <ul>
+                            <li><a href="https://clawhub.com">ClawHub</a></li>
+                            <li><a href="#">技能市场</a></li>
+                            <li><a href="#">博客</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OpenClaw. MIT License.</p>
+                <p class="footer-quote">"EXFOLIATE! EXFOLIATE!" — 一只太空龙虾</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
